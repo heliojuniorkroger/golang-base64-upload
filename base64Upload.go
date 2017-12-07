@@ -16,7 +16,7 @@ func Upload(fileName string, content string) {
             return err
       }
       defer file.Close()
-      _, err := file.Write(decode)
+      _, err = file.Write(decode)
       if err != nil {
             return err
       }
