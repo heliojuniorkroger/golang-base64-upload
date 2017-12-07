@@ -6,7 +6,7 @@ import (
       "encoding/base64"
 )
 
-func Upload(fileName string, content string) {
+func Upload(fileName string, content string) error {
       decode, err := base64.StdEncoding.DecodeString(content)
       if err != nil {
             return err
